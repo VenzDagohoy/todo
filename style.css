@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 32px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+h1 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#add-todo-form {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1e293b;
+    color: #f8fafc;
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+.btn-add { background-color: #38bdf8; color: #0f172a; }
+.btn-add:hover { background-color: #0ea5e9; }
+
+.todo-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 24px; 
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.todo-card {
+    background-color: #1e293b; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+    display: flex;
+    border-top: 4px solid #38bdf8; 
+}
+
+.card-content {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.card-content h2 {
+    color: #f8fafc; 
+    font-size: 18px;
+    line-height: 1.4;
+    flex: 1;
+    padding-right: 24px;
+    word-break: break-word;
+}
+
+/* Kon completed na an todo, butangan nan linya */
+.completed-text {
+    text-decoration: line-through;
+    color: #64748b !important; 
+}
+
+/* Button layout sa right nan card */
+.action-row {
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;
+    min-width: 140px;
+}
+
+/* Make buttons fill the action-row width */
+.btn-toggle { background-color: #10b981; color: white; width: 100%; }
+.btn-toggle:hover { background-color: #059669; }
+
+.btn-delete { background-color: #ef4444; color: white; width: 100%; }
+.btn-delete:hover { background-color: #dc2626; }
