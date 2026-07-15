@@ -11,14 +11,12 @@
     <h1>Todo Manager</h1>
     <p>Manage your tasks using POST, PUT, and DELETE methods</p>
     
-    <form id="add-todo-form">
-        <input type="text" id="todo-title" placeholder="Enter a new task..." required>
-        <button type="submit" class="btn-add">Add Todo</button>
-    </form>
+    <form id="add-todo-form" onsubmit="event.preventDefault(); console.log('Form stopped by HTML!');">
   </header>
   
   <main id="todo-list" class="todo-container"></main>
 
   <script src="script.js"></script>
+  <script src="config.js"></script>
 </body>
 </html>
