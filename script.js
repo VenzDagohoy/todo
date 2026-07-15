@@ -7,7 +7,7 @@ const titleInput = document.getElementById("todo-title");
 const API_URL = 'https://apitest.enricodelarosa.tech/todos'; // Ini an web address (URL) nan backend server
 const HEADERS = {
     'Content-Type': 'application/json', //Ipahibayo sa server na JSON format an ipada na data
-    'Authorization': 'Bearer ${API_TOKEN}' //Token para ma access an API
+    'Authorization': `Bearer ${API_TOKEN}` //Token para ma access an API
 };
 
 //GET kuhaon an tanan todos gikan sa API 
